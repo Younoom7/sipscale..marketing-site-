@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SipScale Marketing | Make your reels pay</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F3EFFF;--surface:#fff;--ink:#120B2E;--muted:#4F4870;--violet:#6B3DFF;--pink:#FF4FA3;--lime:#C6FF3D;--sun:#FFC933;--line:#120B2E;color-scheme:light;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#140D33;--surface:#1E1547;--ink:#F4F0FF;--muted:#B5ADDA;--line:#F4F0FF;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#140D33;--surface:#1E1547;--ink:#F4F0FF;--muted:#B5ADDA;--line:#F4F0FF;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:"Bricolage Grotesque","Instrument Sans",system-ui,sans-serif;line-height:1.02;margin:0;letter-spacing:-.025em;font-weight:800}
+a{color:inherit}
+.wrap{max-width:1100px;margin:0 auto;padding:0 22px}
+header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.brand{display:flex;align-items:center;gap:10px;font:800 24px "Bricolage Grotesque",sans-serif;text-decoration:none;letter-spacing:-.03em}
+.brand svg{width:42px;height:42px}
+.btn{display:inline-block;background:var(--lime);color:#120B2E;font-weight:600;padding:13px 24px;border-radius:999px;text-decoration:none;border:2.5px solid var(--line);box-shadow:4px 4px 0 var(--line);cursor:pointer;font-family:inherit;font-size:16px;transition:transform .12s,box-shadow .12s}
+.btn:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--line)}
+.btn.pink{background:var(--pink);color:#120B2E}
+.btn.plain{background:var(--surface);color:var(--ink)}
+.btn:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--violet);outline-offset:3px}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:30px;align-items:center;padding:30px 0 60px}
+.hero h1{font-size:clamp(44px,8vw,92px)}
+.hero h1 span{display:inline-block;background:var(--violet);color:#fff;padding:0 .18em;border-radius:.2em;margin-top:.08em}
+.lead{font-size:19px;color:var(--muted);max-width:30em;margin:24px 0 30px}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.stage{position:relative;display:flex;justify-content:center;min-height:430px}
+.stage svg.phone{width:min(300px,78%);height:auto}
+.sticker{position:absolute;font:800 18px "Bricolage Grotesque",sans-serif;padding:8px 16px;border:2.5px solid var(--line);border-radius:999px;box-shadow:4px 4px 0 var(--line);color:#120B2E;white-space:nowrap}
+.s1{background:var(--lime);top:8%;left:0;transform:rotate(-2deg)}
+.s2{background:var(--pink);bottom:20%;left:-2%;transform:rotate(2deg)}
+.s3{background:var(--sun);top:30%;right:-2%;transform:rotate(2deg)}
+.sticker,.steps li,.card,details,.phone,.est .form{transition:transform .22s cubic-bezier(.3,1.6,.5,1),box-shadow .22s ease}
+@media(hover:hover){
+.sticker:hover{transform:rotate(0) scale(1.12);box-shadow:6px 6px 0 var(--line)}
+.phone:hover{transform:scale(1.04) rotate(-1deg)}
+.steps li:hover,.card:hover{transform:translate(-4px,-6px) scale(1.02);box-shadow:11px 11px 0 var(--line)}
+details:hover{transform:scale(1.015);box-shadow:5px 5px 0 var(--line)}
+.est .form:hover{transform:scale(1.015)}
+}
+.strip{background:var(--ink);color:var(--bg);border-block:3px solid var(--line);overflow:hidden;text-align:center;margin:10px 0 0}
+.strip div{padding:14px 12px;font:800 24px "Bricolage Grotesque",sans-serif}
+.strip span+span{display:none}
+.strip i{font-style:normal;color:var(--lime);margin:0 22px}
+section{padding:80px 0 10px}
+section h2{font-size:clamp(34px,5.4vw,60px);margin-bottom:14px}
+.intro{color:var(--muted);max-width:34em;margin:0 0 36px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px;padding:0;margin:0;list-style:none;counter-reset:s}
+.steps li{counter-increment:s;border:2.5px solid var(--line);border-radius:26px;padding:24px;box-shadow:6px 6px 0 var(--line);color:#120B2E}
+.steps li:nth-child(1){background:var(--lime)}.steps li:nth-child(2){background:var(--pink)}.steps li:nth-child(3){background:var(--sun)}.steps li:nth-child(4){background:#B9A6FF}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:#120B2E;color:#fff;font:800 20px "Bricolage Grotesque",sans-serif;margin-bottom:34px}
+.steps h3{font-size:25px;margin-bottom:8px}
+.steps p{margin:0;font-size:16px}
+.est{display:grid;grid-template-columns:.9fr 1.1fr;gap:34px;align-items:center;background:var(--violet);color:#fff;border:2.5px solid var(--line);border-radius:34px;padding:44px;box-shadow:8px 8px 0 var(--line)}
+.est h2{margin-bottom:12px}
+.est p{margin:0;opacity:.92}
+.form{background:var(--surface);color:var(--ink);border:2.5px solid var(--line);border-radius:24px;padding:24px;display:grid;gap:14px}
+.form label{font-weight:600;font-size:15px;display:grid;gap:6px}
+.form input,.form select{font:inherit;padding:12px 14px;border-radius:12px;border:2px solid var(--line);background:var(--bg);color:var(--ink);width:100%}
+.form .two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.hint{font-size:13px;color:var(--muted);margin:0;text-align:center}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.card{background:var(--surface);border:2.5px solid var(--line);border-radius:26px;padding:28px;box-shadow:6px 6px 0 var(--line)}
+.card h3{font-size:26px;margin-bottom:14px}
+.card ul{margin:0;padding:0;list-style:none}
+.card li{padding:9px 0 9px 34px;position:relative;color:var(--muted);border-top:1.5px dashed color-mix(in srgb,var(--line) 30%,transparent)}
+.card li:first-child{border-top:0}
+.card li::before{content:"";position:absolute;left:0;top:14px;width:20px;height:20px;border-radius:50%;background:var(--lime);border:2px solid var(--line)}
+.card.alt li::before{background:var(--pink)}
+details{background:var(--surface);border:2.5px solid var(--line);border-radius:20px;padding:18px 22px;margin-bottom:14px}
+summary{cursor:pointer;font:700 19px "Bricolage Grotesque",sans-serif;list-style:none;display:flex;justify-content:space-between;gap:14px}
+summary::after{content:"+";font-size:26px;line-height:1;color:var(--violet)}
+details[open] summary::after{content:"\2212"}
+details p{margin:12px 0 0;color:var(--muted)}
+.contact{background:var(--pink);color:#120B2E;border:2.5px solid var(--line);border-radius:36px;box-shadow:8px 8px 0 var(--line);text-align:center;padding:56px 26px;margin:80px 0 60px}
+.contact h2{font-size:clamp(34px,6vw,64px);margin-bottom:14px}
+.contact p{max-width:30em;margin:0 auto 28px}
+footer{padding:0 0 36px;color:var(--muted);font-size:14px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.steps li.more{background:var(--surface);color:var(--ink)}
+.steps li.more::before{content:"+"}
+dialog{border:2.5px solid var(--line);border-radius:26px;background:var(--surface);color:var(--ink);padding:0;width:min(720px,calc(100% - 28px));max-height:86vh;box-shadow:8px 8px 0 var(--line)}
+dialog::backdrop{background:rgba(18,11,46,.6)}
+.dh{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:18px 24px;border-bottom:2.5px solid var(--line);position:sticky;top:0;background:var(--surface)}
+.dh h2{font-size:26px;margin:0}
+.db{padding:8px 24px 28px}
+.db h3{font-size:22px;margin:26px 0 8px}
+.db p,.db li{color:var(--muted)}
+.db ul{padding-left:20px}
+@media(max-width:860px){.hero,.est,.cols{grid-template-columns:1fr}.est{padding:28px}.stage{min-height:380px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.sticker,.card,.steps li,details,.phone,.est .form{transition:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="brand" href="#top" aria-label="SipScale home">
+    <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="2" y="2" width="44" height="44" rx="14" fill="#6B3DFF" stroke="#120B2E" stroke-width="3"/><rect x="10" y="27" width="8" height="11" rx="3" fill="#C6FF3D"/><rect x="20" y="19" width="8" height="19" rx="3" fill="#FF4FA3"/><rect x="30" y="9" width="8" height="29" rx="3" fill="#fff"/></svg>
+    SipScale
+  </a>
+  <a class="btn plain" href="#contact">Get in touch</a>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div>
+    <h1>Your reels have reach. <span>Make it pay.</span></h1>
+    <p class="lead">SipScale helps growing Instagram pages earn from their content. We find the campaigns, prep the reels, and you just hit post.</p>
+    <div class="cta">
+      <a class="btn" href="#estimate">Check my earnings</a>
+      <a class="btn plain" href="#how">How it works</a>
+    </div>
+  </div>
+  <div class="stage" aria-hidden="true">
+    <svg class="phone" viewBox="0 0 300 560">
+      <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FF4FA3"/><stop offset=".55" stop-color="#6B3DFF"/><stop offset="1" stop-color="#120B2E"/></linearGradient></defs>
+      <rect x="6" y="6" width="288" height="548" rx="42" fill="#120B2E" stroke="#120B2E" stroke-width="4"/>
+      <rect x="18" y="18" width="264" height="524" rx="32" fill="url(#g)"/>
+      <rect x="110" y="26" width="80" height="14" rx="7" fill="#120B2E"/>
+      <circle cx="150" cy="260" r="46" fill="#fff" opacity=".95"/><path d="M138 238 L138 282 L174 260 Z" fill="#6B3DFF"/>
+      <g fill="#fff"><circle cx="252" cy="380" r="15"/><circle cx="252" cy="430" r="15"/><circle cx="252" cy="480" r="15"/></g>
+      <path d="M252 386 l-8-9 a5 5 0 0 1 8-6 a5 5 0 0 1 8 6 z" fill="#FF4FA3"/>
+      <circle cx="40" cy="480" r="16" fill="#C6FF3D" stroke="#120B2E" stroke-width="3"/>
+      <rect x="64" y="468" width="90" height="10" rx="5" fill="#fff"/><rect x="64" y="486" width="60" height="8" rx="4" fill="#fff" opacity=".6"/>
+      <text x="36" y="110" font-family="Bricolage Grotesque,Arial,sans-serif" font-weight="800" font-size="46" fill="#fff">1.2M</text>
+      <text x="38" y="136" font-family="Instrument Sans,Arial,sans-serif" font-size="16" fill="#fff" opacity=".85">views</text>
+    </svg>
+    <span class="sticker s1">go viral</span>
+    <span class="sticker s2">no upfront cost</span>
+    <span class="sticker s3">just post</span>
+  </div>
+</div>
+</main>
+</div>
+
+<div class="strip" aria-hidden="true"><div><span>REELS<i>*</i>CAMPAIGNS<i>*</i>REACH<i>*</i>CONTENT<i>*</i>GROWTH<i>*</i>REELS<i>*</i>CAMPAIGNS<i>*</i>REACH<i>*</i>CONTENT<i>*</i>GROWTH<i>*</i></span><span>REELS<i>*</i>CAMPAIGNS<i>*</i>REACH<i>*</i>CONTENT<i>*</i>GROWTH<i>*</i>REELS<i>*</i>CAMPAIGNS<i>*</i>REACH<i>*</i>CONTENT<i>*</i>GROWTH<i>*</i></span></div>
+
+<div class="wrap">
+<section id="how">
+  <h2>How it works</h2>
+  <p class="intro">No fees, no new tools, and your page stays 100% yours.</p>
+  <ol class="steps">
+    <li><h3>We find it</h3><p>We match paid campaigns to your page and audience.</p></li>
+    <li><h3>We prep it</h3><p>Edited reel, caption and audio, ready to upload.</p></li>
+    <li><h3>You post it</h3><p>Follow the campaign checklist and publish.</p></li>
+    <li><h3>You get paid</h3><p>Once the campaign pays out, you’re paid on the agreed terms.</p></li>
+    <li class="more"><h3>Read more</h3><p>Our full partnership document, in plain words.</p><button class="btn" id="open" type="button" style="margin-top:14px">Open document</button></li>
+  </ol>
+</section>
+
+<section id="estimate">
+  <div class="est">
+    <div>
+      <h2>Know your estimated earnings</h2>
+      <p>Tell us your average views per reel, your engagement and where your audience is. We’ll reply with an estimate for your page.</p>
+    </div>
+    <form class="form" id="f">
+      <label>Page handle<input id="h" placeholder="@yourpage" required></label>
+      <div class="two">
+        <label>Avg views per reel<input id="v" inputmode="numeric" placeholder="e.g. 15000" required></label>
+        <label>Engagement rate<input id="e" placeholder="e.g. 4%"></label>
+      </div>
+      <label>Top audience location<select id="a"><option>India</option><option>United States</option><option>United Kingdom</option><option>Canada</option><option>Other</option></select></label>
+      <button class="btn" type="submit">Get my estimate</button>
+      <p class="hint">Opens an email to us with your details filled in. Terms are shared in writing before you post anything.</p>
+    </form>
+  </div>
+</section>
+
+<section>
+  <h2>What to expect</h2>
+  <p class="intro">Everything is clear before your first post.</p>
+  <div class="cols">
+    <div class="card"><h3>What we do</h3><ul>
+      <li>Share the requirements before every post</li>
+      <li>Prep content so you never edit</li>
+      <li>Report views, approvals and payouts</li>
+      <li>Pay on time, every time</li></ul></div>
+    <div class="card alt"><h3>What we ask</h3><ul>
+      <li>Post exactly as the campaign requires</li>
+      <li>Keep the reel live until payout</li>
+      <li>No bought views or engagement</li>
+      <li>Share your page insights with us</li></ul></div>
+  </div>
+</section>
+
+<section>
+  <h2>Is this for you?</h2>
+  <p class="intro">Creators who don’t stick to one niche and post relatable content that tends to go viral. If you haven’t started earning from sponsors yet and can post a few times a week, this is for you.</p>
+  <details><summary>Do I pay anything?</summary><p>No. There are no fees to start.</p></details>
+  <details><summary>Do you need my password?</summary><p>Never. You post from your own account.</p></details>
+  <details><summary>Are earnings guaranteed?</summary><p>No. Some reels earn well and some earn little, and posts that miss campaign requirements aren’t paid. That’s why we start with a small two-week trial.</p></details>
+  <details><summary>Can I stop any time?</summary><p>Yes. Approved posts are still paid out.</p></details>
+</section>
+
+<div class="contact" id="contact">
+  <h2>Ready to try it?</h2>
+  <p>Slide into our DMs with your page name and a screenshot of your recent reel views.</p>
+  <div class="cta" style="justify-content:center">
+    <a class="btn plain" href="https://instagram.com/sipscale.marketing_" target="_blank" rel="noopener">@sipscale.marketing_</a>
+    <a class="btn" href="mailto:omkarkhadke1210@gmail.com">omkarkhadke1210@gmail.com</a>
+  </div>
+</div>
+<footer><span>© 2026 SipScale Marketing</span><span>@sipscale.marketing_</span></footer>
+<dialog id="doc" aria-labelledby="dt">
+<div class="dh"><h2 id="dt">Partnership details</h2><button class="btn plain" id="close" type="button">Close</button></div>
+<div class="db">
+<h3>What this is</h3>
+<p>We work with small and growing Instagram pages to turn their reach into real income, with no upfront cost and no extra work on your side. We find paid content campaigns and prepare ready-to-post content, and you post it on your page. When a reel earns, the earnings are shared on terms agreed in writing before you start.</p>
+<p>You keep full control of your page. We never ask for your password.</p>
+<h3>Who this is for</h3>
+<ul><li>Your page is active and you haven’t started earning from sponsorships yet, or want to earn more</li><li>You post general or viral-style content, not locked to one niche</li><li>Some of your reels get far more views than your average</li><li>You can post consistently, at least 3 to 5 reels per week</li></ul>
+<h3>Requirements for payment</h3>
+<p>Campaigns have rules, and a reel only earns if they are met. To be paid for a post, you agree to:</p>
+<ul><li>Use the exact content, caption format and audio provided</li><li>Include any required hashtags or mentions</li><li>Post on the agreed schedule and keep the reel live for at least 30 days</li><li>Not delete, edit or hide the reel before payout</li><li>Not buy views, followers or engagement</li><li>Follow the campaign’s country and audience rules</li></ul>
+<p>If a post doesn’t meet the campaign requirements and is rejected, it isn’t paid. We always share the requirements before you post.</p>
+<h3>What we need from you</h3>
+<ul><li>A screenshot of your audience location breakdown (Instagram Insights)</li><li>A screen recording of your last 30 days of reel views</li><li>Your preferred payment method</li><li>Confirmation that you own and control the account</li></ul>
+<h3>What you can expect from us</h3>
+<ul><li>Clear requirements for every campaign before you post</li><li>Ready-to-post content, with sometimes a small on-screen text edit expected from you</li><li>Honest reporting of views, approvals and payouts for each post</li><li>Your payout within 3 to 5 days of the campaign paying out, with proof</li><li>No pressure. You can stop at any time.</li></ul>
+<h3>Be aware of the risks</h3>
+<ul><li>Earnings are not guaranteed. Some reels will earn little or nothing.</li><li>Campaigns can reject posts or change their rules.</li><li>Payout amounts depend on where your views come from.</li></ul>
+<h3>The trial</h3>
+<p>We start with a 2-week trial of 10 to 15 reels. After that, we review the numbers together and both decide whether to continue.</p>
+<h3>Simple agreement</h3>
+<p>Before the trial, both sides confirm the earnings split, the payout timing, that posts failing campaign requirements aren’t paid, and that either side can end the partnership at any time, with approved posts still paid out. The split is shared with you privately in writing.</p>
+</div>
+</dialog>
+</div>
+
+<script>
+var dl=document.getElementById('doc');
+document.getElementById('open').addEventListener('click',function(){dl.showModal()});
+document.getElementById('close').addEventListener('click',function(){dl.close()});
+dl.addEventListener('click',function(e){if(e.target===dl)dl.close()});
+document.getElementById('f').addEventListener('submit',function(ev){
+  ev.preventDefault();
+  var g=function(i){return document.getElementById(i).value.trim()};
+  var body='Page: '+g('h')+'\nAvg views per reel: '+g('v')+'\nEngagement rate: '+(g('e')||'not sure')+'\nTop audience location: '+g('a')+'\n\nPlease send me my estimated earnings.';
+  window.location.href='mailto:omkarkhadke1210@gmail.com?subject='+encodeURIComponent('Earnings estimate for '+g('h'))+'&body='+encodeURIComponent(body);
+});
+</script>
+</body>
+</html>
